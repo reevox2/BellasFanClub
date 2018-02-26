@@ -13,6 +13,7 @@ var myImg = document.querySelector('img');
 var myImgDescription = document.getElementById('action')
 
 
+
 myImg.onclick = function () {
 	var mySrc = myImg.getAttribute('src');
 	if(mySrc === 'images/bella-pose.jpg') {
