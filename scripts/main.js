@@ -10,7 +10,7 @@ if (1 === 1) {
 }
 
 var myImg = document.querySelector('img');
-var myImgDescription = document.getElementById('action')
+var myImgDescription = document.getElementById('action');
 
 
 
