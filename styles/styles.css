@@ -1,30 +1,16 @@
 html {
-	background-color: #660066;
 	font-size: 10px;
 	font-family: 'Indie Flower';
-}
-strong {
-	color: #9f008b;
+	padding: 0;
+	margin: 0;
 }
 
-
-img {
-	display: block;
-	margin:	0 auto;
-}
-h1 {
-	margin: 0px;
-	font-size: 40px;
-	text-align: center;
-	text-shadow: 30px 30px 5px #9f008b;
-}
 
 body {
-	width: 1200px;
-	margin: 30px auto;
-	background-color: #ffffff;
-	padding: 0 20px 20px 20px;
-	border: 5px solid black;
+	margin: 0;
+	width: 100%;
+	background-color: #f7f0f6;
+
 }
 
 p, li {
@@ -37,17 +23,126 @@ a:hover {
 	color: green;
 }
 
+/*Header Grid */
 
-.editor-note:before {
-    content: url('images/open-quote.jpg');
-}
-.editor-note:after {
-	content: url('images/close-quote.jpg');
+header#showcase{
+	display: grid;
+	padding: 0;
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+	background-image: url('../media/landing-image.jpg');
+	background-position: relative;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100vh;
 }
 
+h1.greeting {
+	color: white;
+	font-size: 80px;
+	font-weight: bolder;
+	text-shadow: 1px 1px 5px black;
+	margin: 0;
+	padding-right: 20px;
+	grid-column: 1 / 5;
+	align-self: start;
+	justify-self: end;
+
+}
+
+header .name {
+	color: white;
+	margin: 0px;
+	font-size: 80px;
+	text-align: center;
+	text-shadow: 1px 1px 5px black;
+	grid-row: 4;
+	grid-column: 1 / 5;
+	align-self: end;
+	justify-self: center;
+}
+/* Body Grid */
+
+.expander{
+	height: 600px;
+}
+
+
+.card1 {
+	padding-top: 20px;
+	text-align: center;
+	grid-area: card1;
+	background-color: lightgrey;
+	border: 3px solid black;
+	border-radius: 30px;
+}
+.card2 {
+	text-align: center;
+	grid-area: card2;
+	background-color: white;
+	border: 3px solid black;
+	border-radius: 30px;
+}
+.card3 {
+	padding-top: 20px;
+	text-align: center;
+	grid-area: card3;
+	background-color: lightgrey;
+	border: 3px solid black;
+	border-radius: 30px;
+}
+
+
+#action, #action1, #action2 {
+	color: #9f008b;
+	font-weight: bold;
+}
+.bioSection{
+	grid-area: bioSection;
+	background-image: url('../media/section1.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+.bio{
+	grid-area: bio;
+	background-color: #ffffff;
+	border: 3px solid lightgrey;
+	border-radius: 30px;
+	text-align: center;
+}
+
+.skills{
+	grid-area: skills;
+	background-color: lightgrey;
+	border: 3px solid lightgrey;
+	border-radius: 30px;
+	text-align: center;
+}
+.skills ul{
+	list-style-type: none;
+}
+.footerSection{
+	grid-area: footerSection;
+	background-image: url('../media/section2.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+div.expander {
+	display: inline;
+	color: white;
+	font-size: 100px;
+	text-align: center;
+	text-shadow: 1px 1px 5px black;
+}
+.footer{
+	grid-area: footer;
+	align-self: start;
+	justify-self: center;
+}
 
 #bellaButton {
 	font-size: 20px;
+	width: 100%;
 }
 
 #picture-description {
@@ -56,4 +151,33 @@ a:hover {
 	font-weight: bold;
 	font-size: 60px;
 
+}
+
+.wrapper {
+	display: grid;
+	grid-template-areas: 
+	"card1" 
+	"card2" 
+	"card3" 
+	"bioSection"
+	"bio" 
+	"skills"
+	"footerSection"
+	"footer";
+	justify-content: space-around;
+	grid-gap: 3px;
+	width: 100hv;
+}
+
+@media (min-width: 1050px) {
+	.wrapper {
+		display: grid;
+		grid-auto-columns: minmax(1fr, 1fr);
+		grid-template-areas: 
+		"card1         card2         card3         card3"
+		"bioSection    bioSection    bioSection    bioSection"
+		"bio           bio           skills        skills"
+		"footerSection footerSection footerSection footerSection"
+		"footer        footer        footer        footer";
+	}
 }

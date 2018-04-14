@@ -3,32 +3,63 @@
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
-	<meta charset="utf-8">
-	<title>BELLA'S FAN PAGE! </title>
+	<meta charset="utf-8" content="width=device-width">
+	<title>BELLA'S FAN PAGE!</title>
 </head>
 <body>
-	<h1>Bella "Homie Gangsta Nigga Wifey" Morancy</h1>
-
-	<img id="bella1" src="images/bella-pose.jpg" alt="A picture of Areum Park posing infront of a mirror in one of her dancer outfits. Damn she's hot." width="360" height="480">
-
-	<p id='picture-description'> She 
-		<strong>
-			<span id="action"> DANCES </span>
-		</strong> 
-	</p>
-
-
-	<p class="editor-note"> Bella is <strong>the best dancer</strong> in the world! I cant believe I got the chance to meet and be with such a beautiful woman! Wow dreams really come true. It's my honor and pleasure to present this fan page to you, my love :3 </p> 
-	
-	<p>She's an amazing:</p>
-		<ul>
-			<li>Dancer</li>
-			<li>Singer</li>
-			<li>Wife</li>
-			<li>Best Friend</li>
-		</ul>
-	<p>Check out her kick ass <a href="">blog</a> if you wanna find out what healthy supplements you can use! </p>
-<input id='bellaButton' type='button' value='Click here to see the "Bella Weather Forecast" for today!' onclick='isBellaTheCutest();' />
-<script src="scripts/main.js"></script>
+	<header id="showcase">
+		<h1 class="greeting">Good Morning.</h1>
+		<h1 class="name">Welcome to Bellas Fan Page</h1>
+	</header>	
+	<div class="wrapper">
+			<div class="card1">
+				<video class="dance1" width="286" height="356" controls>
+				  <source src="media/dance1.mp4" type="video/mp4">
+				  Your browser does not support the video tag.
+				</video>
+				<p class="picture-description"> She's a <span id="action1"> HIP HOP GODDESS </span></p>
+			</div>
+			<div class="card2">
+				<img id="bella" src="media/bella-pose.jpg" alt="A picture of Areum Park posing infront of a mirror in one of her dancer outfits. Damn she's hot." width="360" height="480">
+				<p class="picture-description"> She <span id="action">DANCES</span>. Tap Her Picture To See More</p>
+			</div>
+			<div class="card3">
+				<video class="dance2" width="356" height="356" controls>
+				  <source src="media/dance2.mp4" type="video/mp4">
+				  Your browser does not support the video tag.
+				</video>
+				<p class="picture-description"> She <span id="action2"> TEACHES </span></p>
+			</div>
+		<section class="bioSection">
+			<div class="expander">
+				<h1>A little about her</h1>
+			</div>
+		</section>
+		<div class="bio">
+			<p><strong>Bio</strong></p>
+		<p class="editor-note"> Bella supplies <strong>cutting edge</strong> dance classes to the world! Her fans wanted a dedication page to show their appreciation.<strong><br>So here it is.</strong><br>"Wow dreams really come true. It's my honor and pleasure to present this fan page to you <br>Love, You're #1 Fan" <br>--BellaFanClub Chairman, circa. 2018 </p> 
+		</div>
+		<div class="skills">
+			<p><strong>Skills</strong></p>
+		<p>She's an amazing:</p>
+			<ul>
+				<li>Dancer</li>
+				<li>Singer</li>
+				<li>Wife</li>
+				<li>Best Friend</li>
+			</ul>
+		</div>
+		<section class="footerSection">
+			<div class="expander">
+				<h1>This Website Runs On Monkeys</h1>
+			</div>
+			
+		</section>
+		<div class="footer">
+		<p>Check out her kick ass <a href="">blog</a> if you wanna find out what healthy supplements you can use! </p>
+		<input id='bellaButton' type='button' value='Click here to see the "Bella Weather Forecast" for today!' onclick='isBellaTheCutest();' />	
+		</div>
+	</div>
+	<script type="text/javascript" src="./scripts/main.js"></script>
 </body>
 </html>
