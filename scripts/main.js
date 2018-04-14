@@ -29,7 +29,7 @@ myImg.onclick = function () {
 		media1.setAttribute('src', 'media/sing1.mp4');
 		media2.setAttribute('src', 'media/sing2.mp4');
 		myImgDescription.textContent = "SINGS";
-		media1Description.textContent = "KOREAN BEONCE?";
+		media1Description.textContent = "KOREAN BEYONCE?";
 		media2Description.textContent = "NEEDS TO RELEASE HER NEXT ALBUM";
 	} else {
 		myImg.setAttribute('src', 'media/bella-pose.jpg');
