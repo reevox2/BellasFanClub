@@ -9,7 +9,7 @@ html {
 body {
 	margin: 0;
 	width: 100%;
-	background-color: #f7f0f6;
+	background-color: lightgrey;
 
 }
 
@@ -72,24 +72,24 @@ header .name {
 	padding-top: 20px;
 	text-align: center;
 	grid-area: card1;
-	background-color: lightgrey;
-	border: 3px solid black;
-	border-radius: 30px;
+	background-color: white;
+	border: 20px solid lightgrey;
+	padding: 20px 10px 5px 10px;
 }
 .card2 {
 	text-align: center;
 	grid-area: card2;
 	background-color: white;
-	border: 3px solid black;
-	border-radius: 30px;
+	border: 20px solid lightgrey;
+	padding: 20px 10px 5px 10px;
 }
 .card3 {
 	padding-top: 20px;
 	text-align: center;
 	grid-area: card3;
-	background-color: lightgrey;
-	border: 3px solid black;
-	border-radius: 30px;
+	background-color: white;
+	border: 20px solid lightgrey;
+	padding: 20px 10px 5px 10px;
 }
 
 
@@ -106,16 +106,16 @@ header .name {
 .bio{
 	grid-area: bio;
 	background-color: #ffffff;
-	border: 3px solid lightgrey;
-	border-radius: 30px;
+	border: 20px solid lightgrey;
+	padding: 20px 10px 5px 10px;
 	text-align: center;
 }
 
 .skills{
 	grid-area: skills;
-	background-color: lightgrey;
-	border: 3px solid lightgrey;
-	border-radius: 30px;
+	background-color: white;
+	border: 20px solid lightgrey;
+	padding: 20px 10px 5px 10px;
 	text-align: center;
 }
 .skills ul{
@@ -141,8 +141,29 @@ div.expander {
 }
 
 #bellaButton {
-	font-size: 20px;
-	width: 100%;
+	font-size: 50px;
+	font-weight: bold;
+	margin: 0 30% 3% 20%;
+	width: 51%;
+	padding: 5px;
+	background-color: white;
+	box-shadow: none;
+	border: 3px solid black;
+	font-family: 'Indie Flower';
+}
+
+#bellaButton:hover {
+	font-size: 50px;
+	font-weight: bold;
+	text-shadow: 1px 1px 30px white;
+	margin: 0 30% 3% 20%;
+	width: 51%;
+	padding: 5px;
+	background-color: black;
+	box-shadow: none;
+	border: 3px solid white;
+	color: white;
+	font-family: 'Indie Flower';
 }
 
 #picture-description {
@@ -165,11 +186,10 @@ div.expander {
 	"footerSection"
 	"footer";
 	justify-content: space-around;
-	grid-gap: 3px;
 	width: 100hv;
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1110px) {
 	.wrapper {
 		display: grid;
 		grid-auto-columns: minmax(1fr, 1fr);

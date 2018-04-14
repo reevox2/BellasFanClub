@@ -1,12 +1,8 @@
 function isBellaTheCutest (){
 
 alert("Running analysis on current sociopolitical climate to determine approximate atmopheric concentration of Bella cuteness molocules.......")
-
-if (1 === 1) {
-	alert("Get your sunglasses ready, cuz its another shiny day of chillin with Bella. B)")
-} else {
-	alert("Get your blankies out, cuz today we staying in and chillin with Bella. :3")
-}
+alert("Loading......")
+alert("Yep, she's still awesome.")
 }
 
 var myImg = document.querySelector('#bella');
