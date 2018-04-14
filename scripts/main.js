@@ -36,6 +36,8 @@ myImg.onclick = function () {
 		media1.setAttribute('src', 'media/dance1.mp4');
 		media2.setAttribute('src', 'media/dance2.mp4');
 		myImgDescription.textContent = "DANCES";
+		media1Description.textContent = " HIP HOP GODDESS ";
+		media2Description.textContent = " TEACHES ";
 	}
 }
 /*Welcome Message: Get Time of Day and Name and greet user */
