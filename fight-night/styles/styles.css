@@ -193,45 +193,80 @@ button:hover {
 }
 
 @media screen and (max-width: 600px){
-	#choose:hover {
-	position: fixed;
-	top: 80px;
-	height: 80%;
-	width: 80%;
-	z-index: 10;
-	transform: scale(1.1);
-	}
-	button {
-	cursor: pointer;
-    position: relative;
-    top: 90%;
-    left: 0;
-    border: 3px solid #4CAF50;
-    background-color: #4CAF50;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    height: 7%;
-    width: 100%;
-}
-}
-@media screen and (max-width: 519px){
 	i {
-    position: absolute;
     top: 2%;
     left: 46%;
 	}
+	#fight {
+		grid-gap: 0%;
+	}
 	#choose:hover {
-	position: fixed;
 	top: 120px;
 	height: 80%;
 	width: 80%;
-	z-index: 10;
-	transform: scale(1.1);
 	}
 	button {
     top: 81%;
     left: 0;
+	}
+	.bear {
+		background-position: 37% 50%;
+	}
+	.playerSelection {
+    top: 27%;
+    left: 11%;
+    z-index: 12;
+	}
+	#choices {
+    position: absolute;
+    top: 89%;
+    width: 89%;
+	}
+	.computerSelection {
+    top: 81%;
+    left: 74%;
+    z-index: 12;
+	}
+	div.wrapper {
+		grid-gap: 1%;
+		margin-left: 12px;
+	}
+	html, body {margin: 0; height: 100%; overflow: hidden}
+}
+@media screen and (max-width: 519px){
+	i {
+    top: 2%;
+    left: 46%;
+	}
+	#fight {
+		grid-gap: 0%;
+	}
+	#choose:hover {
+	top: 120px;
+	height: 80%;
+	width: 80%;
+	}
+	button {
+    top: 81%;
+    left: 0;
+	}
+	.bear {
+		background-position: 37% 50%;
+	}
+	.playerSelection {
+    top: 27%;
+    left: 11%;
+    z-index: 12;
+	}
+	#choices {
+    position: absolute;
+    top: 89%;
+    width: 89%;
+	}
+	.computerSelection {
+    top: 81%;
+    left: 74%;
+    z-index: 12;
 	}
 	div.wrapper {
 		grid-gap: 1%;
