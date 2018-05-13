@@ -89,7 +89,7 @@ function computerPlay(){
 function playRound(playerSelection){
 	playerSelectionBox.style.backgroundImage = `url('../media/player${playerSelection}.png')`
 	computerSelection = computerPlay();
-	computerSelectionBox.style.backgroundImage = `url('../media/computer${computerSelection}.png')`
+	computerSelectionBox.style.backgroundImage = `url('../fight-night/media/computer${computerSelection}.png')`
 	let winner = getWinner(playerSelection, computerSelection);
 	getScore(winner);
 }
