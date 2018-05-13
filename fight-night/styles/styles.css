@@ -46,6 +46,7 @@ div.wrapper {
     border: 3px solid blue;
     top: 44%;
     left: 46%;
+    background-image: url("../media/blank.png");
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
@@ -192,7 +193,7 @@ button:hover {
 }
 
 @media screen and (max-width: 600px){
-	.character1:hover, .character2:hover, .character3:hover {
+	#choose:hover {
 	position: fixed;
 	top: 80px;
 	height: 80%;
@@ -215,7 +216,12 @@ button:hover {
 }
 }
 @media screen and (max-width: 519px){
-	.character1:hover, .character2:hover, .character3:hover {
+	i {
+    position: absolute;
+    top: 2%;
+    left: 46%;
+	}
+	#choose:hover {
 	position: fixed;
 	top: 120px;
 	height: 80%;
@@ -226,6 +232,47 @@ button:hover {
 	button {
     top: 81%;
     left: 0;
+	}
+	div.wrapper {
+		grid-gap: 1%;
+		margin-left: 12px;
+	}
+	html, body {margin: 0; height: 100%; overflow: hidden}
+}
+@media screen and (max-width: 375px){
+	i {
+    top: 2%;
+    left: 46%;
+	}
+	#fight {
+		grid-gap: 0%;
+	}
+	#choose:hover {
+	top: 120px;
+	height: 80%;
+	width: 80%;
+	}
+	button {
+    top: 81%;
+    left: 0;
+	}
+	.bear {
+		background-position: 37% 50%;
+	}
+	.playerSelection {
+    top: 27%;
+    left: 11%;
+    z-index: 12;
+	}
+	#choices {
+    position: absolute;
+    top: 89%;
+    width: 89%;
+	}
+	.computerSelection {
+    top: 81%;
+    left: 74%;
+    z-index: 12;
 	}
 	div.wrapper {
 		grid-gap: 1%;
