@@ -90,14 +90,14 @@ function playRound(playerSelection){
 	let playerSelectionFirstLetter = playerSelection.slice(0,1);
 	playerSelectionFirstLetter = playerSelectionFirstLetter.toUpperCase();
 	let playerSelectionRest = playerSelection.slice(1);
-	playerSelection = playerSelectionFirstLetter + playerSelectionRest;
-	playerSelectionBox.style.backgroundImage = `url('../fight-night/media/player${playerSelection}.png')`
+	let playerSelectionImg = playerSelectionFirstLetter + playerSelectionRest;
+	playerSelectionBox.style.backgroundImage = `url('../fight-night/media/player${playerSelectionImg}.png')`
 	computerSelection = computerPlay();
 	let computerSelectionFirstLetter = computerSelection.slice(0,1);
 	computerSelectionFirstLetter = computerSelectionFirstLetter.toUpperCase();
 	let computerSelectionRest = computerSelection.slice(1);
-	computerSelection = computerSelectionFirstLetter.concat(computerSelectionRest);
-	computerSelectionBox.style.backgroundImage = `url('../fight-night/media/computer${computerSelection}.png')`
+	let computerSelectionImg = computerSelectionFirstLetter.concat(computerSelectionRest);
+	computerSelectionBox.style.backgroundImage = `url('../fight-night/media/computer${computerSelectionImg}.png')`
 	let winner = getWinner(playerSelection, computerSelection);
 	getScore(winner);
 }
