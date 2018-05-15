@@ -87,9 +87,17 @@ function computerPlay(){
 	return choiceList[choiceSelected];
 }
 function playRound(playerSelection){
-	playerSelectionBox.style.backgroundImage = `url('../media/player${playerSelection}.png')`
+	let playerSelectionFirstLetter = playerSelection.slice(0,1);
+	playerSelectionFirstLetter = playerSelectionFirstLetter.toUpperCase();
+	let playerSelectionRest = playerSelection.slice(1);
+	playerSelection = playerSelectionFirstLetter + playerSelectionRest;
+	playerSelectionBox.style.backgroundImage = `url('../fight-night/media/player${playerSelection}.png')`
 	computerSelection = computerPlay();
-	computerSelectionBox.style.backgroundImage = `url('../../fight-night/media/computer${computerSelection}.png')`
+	let computerSelectionFirstLetter = computerSelection.slice(0,1);
+	computerSelectionFirstLetter = computerSelectionFirstLetter.toUpperCase();
+	let computerSelectionRest = computerSelection.slice(1);
+	computerSelection = computerSelectionFirstLetter.concat(computerSelectionRest);
+	computerSelectionBox.style.backgroundImage = `url('../fight-night/media/computer${computerSelection}.png')`
 	let winner = getWinner(playerSelection, computerSelection);
 	getScore(winner);
 }
