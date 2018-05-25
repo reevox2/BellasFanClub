@@ -1,6 +1,8 @@
-window.onload = function() {
-    let mortalKombat = document.getElementById("mortalKombat");
-}
+let mortalKombat = document.getElementById("mortalKombat");
+let brock = {0: document.querySelector('#brock1'), 
+			 1: document.querySelector('#brock2'),
+			 2: document.querySelector('#brock3')};
+
 
 volumeButton = document.querySelector('i');
 volumeButton.addEventListener('click', (e) => {
@@ -19,6 +21,7 @@ volumeButton.addEventListener('click', (e) => {
 let playerScore, computerScore, selectedFighter
 
 function selectFighter(){
+
 	selectedFighter = this.parentElement;
 	selectedFighter.classList.add('chosen');
 	let allFighters = document.querySelectorAll('#choose');
@@ -50,12 +53,15 @@ function selectFighter(){
 	let bearRoar = document.querySelector('#bearRoar');
 	mortalKombat.pause();
 	bearRoar.play();
-	bearRoar.onended = () => mortalKombat.play();
 	selectedFighter.addEventListener('transitionend',  (e)=>{
 		if(e.propertyName === 'transform' && wrapper.id === 'fight'){
 			alert(`OH MY GOD! It's a FUCKING BEAR!`);
 		}	
 	} );
+	let announcer = brock[`${Math.floor(Math.random() * 3)}`];
+	announcer.loop = false;
+	announcer.play();
+	announcer.onended = () => mortalKombat.play();
 	//reset scores
 	playerScore = 0, computerScore = 0;
 }
