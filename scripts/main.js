@@ -39,21 +39,18 @@ myImg.onclick = function () {
 /*Welcome Message: Get Time of Day and Name and greet user */
 function currentTime(){
 		usrname = setUsrname();
-		timeNow = new Date().toLocaleTimeString();
-		let amPM = timeNow.charAt(timeNow.length - 2) + timeNow.charAt(timeNow.length - 1);
-		let hour = new Date().getHours()
-		if (amPM === "AM") {
+		let hour = new Date().getHours();
+		let amPM = hour >= 12 ? 'pm' : 'am';
+		if (amPM === "am") {
 			if (hour > 5) {
 				document.querySelector('.greeting').textContent = "Good Morning, " + usrname
 			} else {
 				document.querySelector('.greeting').textContent = "I hope you sleep soon, " + usrname
 			}
-		} else if (hour = 12 || hour < 5) {
+		} else if (hour >= 12 && hour < 17) {
 			document.querySelector('.greeting').textContent = "Good Afternoon, " + usrname
-		} else if (hour > 5 && hour < 8 ) {
+		} else if (hour >= 17 && hour < 20 ) {
 			document.querySelector('.greeting').textContent = "Good Evening, " + usrname
-		} else if (hour > 9) {
-			document.querySelector('.greeting').textContent = "Having a nice night " + usrname + "?"
 		} else {
 			document.querySelector('.greeting').textContent = "Having a nice night " + usrname + "?"
 		}
